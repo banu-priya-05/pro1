@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Webinar Registration Form</title>
+    </head>
+    <body>
+        <h2>New Registration</h2>
+        <form action="#" method="Post">
+          <p>
+            <label for="fname">First Name:</label>
+            <input type="text" id ="fname" name="fname" autocomplete="on" required autofocus>
+          </p> 
+          <p>
+            <label for="lname">Last Name:</label>
+            <input type="text" id ="lname" name="lname" autocomplete="on" required>
+          </p> 
+            
+          <p>
+            <label for="@mail">E-mail:</label>
+            <input type="text" id ="@mail"  name="@mail" required>
+          </p> 
+          <p>
+            <label for="Phone"> Phone number:</label>
+            <input type="tel" id ="Phone" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  max="10" min="0" required />
+          </p> 
+          <p>
+            <label for="Cname">Company Name:</label>
+            <input type="text" id ="Cname" name="Cname" required>
+          </p> 
+          <p> 
+            <label for="Caddress">Company Address:</label><br>
+            <input type="text" id="Caddress" name="Caddress"  required placeholder="line1">
+            <br>
+            <input type="text" id="line1" name="line2" placeholder="line2">
+            <br>
+            <input type="text" id="city" name="City" required width="20"  placeholder="city">
+            <br>
+            <input type="text" id="state" name="state" required placeholder="state">
+            <br>
+            <input type="text" id="zipcode" value="" optional pattern="[0-9]{5}" placeholder="zipcode">
+          </p> 
+          <p>
+            <label for="CompanyWebsite">Company Website</label>
+            <input type="text" id="CompanyWebsite" name="CompanyWebsite">
+        </p>
+        <p>"How did you hear about us?</p>
+          <p>  
+            <input type="checkbox" id="socialmedia" value="socialmedia">
+            <label for="socialmedia">Social Media</label><br>
+            <input type="checkbox" id="advertisement" value="advertisement">
+            <label for="advertisement">Advertisement</label><br>
+            <input type="checkbox" id="Others" value="Others">
+            <label for="Others">Others</label><br>
+        </p>
+        <p>
+            <input type="submit" value="submit">
+        </p> 
+        </form>
+    </body>
+</html>
